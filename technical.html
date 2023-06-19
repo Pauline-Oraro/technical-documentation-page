@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="technical.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono|Montserrat">
+    <title>Javascript Technical Documentation Page</title>
+</head>
+<body>
+    <nav class="navigation">
+        <header>JavaScript Technical Documentation Page</header>
+        <hr>
+        <ul>
+            <li>
+                <a href="#Introduction">Introduction</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Where-To">Where To</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Syntax">Syntax</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Variables">Variables</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#var">Var</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#let">Let</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#const">Const</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Operators">Operators</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Arithmetic">Arithmetic</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Assignment">Assignment</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Comparison">Comparison</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#String">String</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Logical">Logical</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Tenary">Tenary</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Bitwise">Bitwise</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Type">Type</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#StringData">StringData</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Number">Number</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#BigInt">BigInt</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Boolean">Boolean</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Undefined">Undefined</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Array">Array</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Object">Object</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Symbol">Symbol</a>
+            </li>
+            <hr>
+            <li>
+                <a href="#Functions">Functions</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-content">
+    <section id="Introduction">
+        <h2>Introduction</h2>
+        <p>Javascript is a dynamic computer programming language. It is lightweight and 
+            most commonly used as a part of web pages, whose implementations allow 
+            client-side script to interact with the user and make dynamic pages. It is an 
+            interpreted programming language with object-oriented capabilities.
+        </p>
+        <p>JavaScript is the most popular scripting language on the internet, and works in all major
+        browsers, such as Internet Explorer, Firefox, and Opera.
+        JavaScript is used in millions of Web pages to improve the design, validate forms, detect
+        browsers, create cookies, and much more.
+        </p>
+        <p>What is JavaScript:</p>
+        <ul>
+            <li>JavaScript was designed to add interactivity to HTML pages</li>
+            <li>JavaScript is a scripting language</li>
+            <li>A scripting language is a lightweight programming language</li>
+            <li>JavaScript is usually embedded directly into HTML pages</li>
+            <li>JavaScript is an interpreted language (means that scripts execute without preliminary
+                compilation)</li>
+            <li>Everyone can use JavaScript without purchasing a license</li>
+        </ul>
+        <article id="Where-To">
+            <h3>Where To</h3>
+            <p>JavaScripts in the body section will be executed WHILE the page loads.
+            JavaScripts in the head section will be executed when CALLED.
+            JavaScripts in a body will be executed immediately while the page loads into the browser. This is
+            not always what we want. Sometimes we want to execute a script when a page loads, other times
+            when a user triggers an event</p>
+            <p><em>Scripts in the head section:</em> Scripts to be executed when they are called, or when an event is
+                triggered, go in the head section. When you place a script in the head section, you will ensure
+                that the script is loaded before anyone uses it.
+            </p>
+            <img src="/images/head.PNG">
+            <p>
+                <em>Scripts in the body section:</em>
+                Scripts to be executed when the page loads go in the body section.
+                When you place a script in the body section it generates the content of the page
+            </p>
+            <img src="/images/body.PNG">
+            <p>
+                <em>Scripts in both the body and the head section:</em>
+                You can place an unlimited number of scripts in
+                your document, so you can have scripts in both the body and the head section.
+            </p>
+            <p>
+                You can write a JavaScript in an external file. Save the external JavaScript filewith a .js file extension.
+                The external script cannot contain the <code>script</code> tag!
+                To use the external script, point to the .js file in the "src" attribute of the <code>script</code> tag
+            </p>
+        </article>
+        <article id="Syntax">
+            <h3>Syntax</h3>
+            <p>JavaScript code (or just JavaScript) is a sequence of JavaScript statements.
+            Each statement is executed by the browser in the sequence they are written.
+        </p>
+        <p>
+            JavaScript statements can be grouped together in blocks.
+            Blocks start with a left curly bracket {, and ends with a right curly bracket }.
+            The purpose of a block is to make the sequence of statements execute together. 
+        </p>
+        <img src="/images/script.PNG">
+        </article>
+    </section>
+    <section id="Variables">
+        <h2>Variables</h2>
+        <p>
+            Variables are "containers" for storing information.
+            JavaScript variables are used to hold values or expressions
+        </p>
+        <article id="var">
+            <h3>Var keyword</h3>
+            <p>Creating variables in JavaScript is most often referred to as "declaring" variables.
+            You can declare JavaScript variables with the var statement:
+            </p>
+            <code>var car = "Volvo";</code>
+        </article>
+        <article id="let">
+            <h3>Let keyword</h3>
+            <p>Variables defined with the let keyword cannot be redeclared and cannot be accessed outside of a block</p>
+            <code>
+                let x = 25;
+            </code>
+        </article>
+        <article id="const">
+            <h3>Const keyword</h3>
+            <p>Occasionally, your program may have a need for variables that can't be 
+            changed. In these cases, you can declare your variable using the const keyword.
+            but once you create a constant, its value cannot be changed during its lifetime (which lasts as long
+            as the script is running).
+        </p>
+        <code> 
+            const heightOfTheEmpireStateBuilding = 1500;</code>
+        </article>
+    </section>
+    <section id="Operators">
+        <h2>Operators</h2>
+        <p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called 
+            operands and '+' is called the operator. JavaScript supports the following 
+            types of operators:</p>
+        <article id="Arithmetic">
+            <h3>Arithmetic Operators</h3>
+            <p>Arithmetic operators are used to perform arithmetic between variables and/or values. y=5</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td> + </td>
+                    <td>Addition</td>
+                    <td> x= y + 2</td>
+                    <td> x = 7</td>
+                </tr>
+                <tr>
+                    <td> - </td>
+                    <td>Subtraction</td>
+                    <td> x = y - 2</td>
+                    <td> x = 3</td>
+                </tr>
+                <tr>
+                    <td> * </td>
+                    <td>Multiplication</td>
+                    <td> x = y * 2</td>
+                    <td> x = 10</td>
+                </tr>
+                <tr>
+                    <td> / </td>
+                    <td>Division</td>
+                    <td> x = y / 2</td>
+                    <td>x = 2.5</td>
+                </tr>
+                <tr>
+                    <td> % </td>
+                    <td>Modulus</td>
+                    <td> x = y % 2</td>
+                    <td> x = 1</td>
+                </tr>
+                <tr>
+                    <td> ++ </td>
+                    <td>Increment</td>
+                    <td> x = ++ y</td>
+                    <td> x = 6</td>
+                </tr>
+                <tr>
+                    <td> -- </td>
+                    <td>Decrement</td>
+                    <td> x = -- y</td>
+                    <td> x = 4</td>
+                </tr>
+            </table>
+        </article>
+        <article id="Assignment">
+            <h3>Assignment Operators</h3>
+            <p>Assignment operators are used to assign values to JavaScript variables.
+            Given that x=10 and y=5, the table below explains the assignment operators: </p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Example</th>
+                    <th>Same As</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td> = </td>
+                    <td>x = y</td>
+                    <td> x= y + 2</td>
+                    <td> x = 5</td>
+                </tr>
+                <tr>
+                    <td> += </td>
+                    <td>x += y</td>
+                    <td> x = x + y</td>
+                    <td> x = 15</td>
+                </tr>
+                <tr>
+                    <td> -= </td>
+                    <td> x -= y</td>
+                    <td> x = x - y</td>
+                    <td> x = 5</td>
+                </tr>
+                <tr>
+                    <td> *= </td>
+                    <td>x *= y </td>
+                    <td> x = x * y</td>
+                    <td>x = 50</td>
+                </tr>
+                <tr>
+                    <td> /= </td>
+                    <td> x /= y</td>
+                    <td> x = x / y</td>
+                    <td> x = 2</td>
+                </tr>
+                <tr>
+                    <td> %= </td>
+                    <td> x % y</td>
+                    <td> x = x % y</td>
+                    <td> x = 0</td>
+                </tr>
+            </table>
+        </article>
+        <article id="Comparison">
+            <h3>Comparison Operators</h3>
+            <p>Comparison operators test for equality or difference between operands and 
+            return a true or false value
+        </p>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td> == </td>
+                <td> Equality</td>
+                <td> 3 == "3"</td>
+                <td> True</td>
+            </tr>
+            <tr>
+                <td> != </td>
+                <td>Inequality</td>
+                <td> 3 != 3</td>
+                <td> False</td>
+            </tr>
+            <tr>
+                <td> === </td>
+                <td> Strictly Equality</td>
+                <td> 3 === "3"</td>
+                <td> False</td>
+            </tr>
+            <tr>
+                <td> !== </td>
+                <td> Strictly Inequality </td>
+                <td> 3 !== "3"</td>
+                <td> True</td>
+            </tr>
+            <tr>
+                <td> > </td>
+                <td> Greater Than</td>
+                <td> 7 > 1</td>
+                <td> True</td>
+            </tr>
+            <tr>
+                <td> >= </td>
+                <td> Greater than or equal to</td>
+                <td> 7 >= 7 </td>
+                <td> True</td>
+            </tr>
+            <tr>
+                <td> &lt; </td>
+                <td> Less than</td>
+                <td> 7 &lt;= 10 </td>
+                <td> True</td>
+            </tr>
+            <tr>
+                <td> &lt;= </td>
+                <td> Less than or equal to</td>
+                <td> 2 &lt;= 2 </td>
+                <td> True</td>
+            </tr>
+        </table>
+        </article>
+        <article id="String">
+            <h3>String Operators</h3>
+            <p>The string operator performs operations using two strings. When used with 
+            strings, the + operator becomes the concatenation operator. Its purpose is to 
+            join together strings.</p>
+            <code>var greeting = "Hello, " + firstName + ". I'm" + " " + 
+                mood + " to see you.";</code>
+        </article>
+        <article id="Logical">
+            <h3>Logical Operators</h3>
+            <p>Logical operators evaluate a logical expression for truthiness or falseness</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>And</td>
+                    <td>If both the operands are true, then the condition becomes true.</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Or</td>
+                    <td>If one the operands is true, then the condition becomes true.</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Not</td>
+                    <td>Reverses the logical state of its operand. If a condition is true, then the 
+                        Logical NOT operator will make it false.
+                        </td>
+                </tr>
+            </table>
+        </article>
+        <article id="Tenary">
+            <h3>Tenary Operators</h3>
+            <p>JavaScript also contains a conditional operator that assigns a value to a variable based on some condition</p>
+            <code>var isItBiggerThanTen = (value > 10) ? "greater than 10" : 
+                "not greater than 10";</code>
+        </article>
+        <article id="Bitwise">
+            <h3>Bitwise Operators</h3>
+            <p>Bitwise operators convert numbers to these 32-bit binary numbers and then 
+                convert them back to what we would consider normal numbers after the 
+                operation has been done.</p>
+        </article>
+        <article id="Type">
+            <h3>Type of operators</h3>
+            <p>The typeof operator returns a string containing the type of the operand:</p>
+            <code>var businessName = "Harry's Watch Repair";
+                console.log typeof businessName; // returns "string"</code>
+        </article>
+    </section>
+    <section id="Data-Types">
+        <h2>Data Types</h2>
+        <p>A variable's data type is the kind of data the variable can hold and what 
+            operations can be done with the value of the variable</p>
+        <article id="StringData">
+            <h3>String Datatype</h3>
+            <p>You create a string variable by enclosing it in single or double quotes. It doesn't actually matter whether you use single or double quotes, as long as the beginning and ending quotes surrounding the string match up, like this:</p>
+            <code>var myString = "Hi, I'm a string.";</code>
+        </article>
+        <article id="Number">
+            <h3>Number Datatype</h3>
+            <p>Numbers in JavaScript are stored as 64-bit, floating point values. What this 
+                means, in English, is that numbers can range from 5e-324 (that's -5 followed 
+                by 324 zeros) to 1.7976931348623157e+308 (move the decimal 308 spots to 
+                the right to see this giant number). Any number may have decimal points or 
+                not. Unlike most programming languages, JavaScript doesn't have separate 
+                data types for integers (positive or negative numbers without a fractional 
+                part) and floating points (decimals)
+            </p>
+                <code>
+                    var numberOfDucks = 4;
+                    <br>
+                    var populationOfSpain = 47200000;
+                    <br>
+                    var howManyTacos = 8;
+                </code>
+        </article>
+        <article id="BigInt">
+            <h3>BigInt Datatype</h3>
+            <p>All JavaScript numbers are stored in a a 64-bit floating-point format.
+                JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
+            </p>
+            <code>let x = BigInt("123456789012345678901234567890");</code>
+        </article>
+        <article id="Boolean">
+            <h3>Boolean Datatype</h3>
+            <p>Boolean variables are often used for storing the results of comparisons. Boolean variables store one of two possible values: either true or false. You can find out the Boolean value of a comparison or convert any value in JavaScript into a Boolean value by using the Boolean() function. For example:
+            </p>
+            <code>var isItGreater = Boolean (3 > 20);<br>
+                alert (isItGreater); // returns false<br>
+                var areTheySame = Boolean ("tiger" === "Tiger"); <br>
+                alert (areTheySame); // returns false
+                </code>
+        </article>
+        <article id="Undefined">
+            <h3>Undefined Datatype</h3>
+            <p>Even if you create a variable in JavaScript and don't specifically give it a 
+            value, it still has a default value. This value is "undefined".
+            </p>
+        </article>
+        <article id="Array">
+            <h3>Array Datatype</h3>
+            <p>An array can hold many values under a single name, and you can access the values by referring to an index number.
+            </p>
+            <code>const cars = ["Saab", "Volvo", "BMW"];</code>
+        </article>
+        <article id="Object">
+            <h3>Object Datatype</h3>
+            <p>JavaScript objects are written with curly braces {}.
+                Object properties are written as name:value pairs, separated by commas.
+            </p>
+            <code>const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code>
+        </article>
+        <article id="Symbol">
+            <h3>Symbol Datatype</h3>
+            <p>A JavaScript Symbol is a primitive datatype just like Number, String, or Boolean.
+                It represents a unique "hidden" identifier that no other code can accidentally access.
+                For instance, if different coders want to add a person.id property to a person object belonging to a third-party code, they could mix each others values.
+            </p>
+        </article>
+    </section>
+    <section id="Functions">
+        <h2>Functions</h2>
+        <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+            Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+            The parentheses may include parameter names separated by commas:
+            (parameter1, parameter2, ...)
+            The code to be executed, by the function, is placed inside curly brackets: {}
+        </p>
+            <code>let x = myFunction(4, 3);
+                function myFunction(a, b) {
+                  return a * b;}
+            </code>
+    </section>
+    </div>
+</body>
+</html>
